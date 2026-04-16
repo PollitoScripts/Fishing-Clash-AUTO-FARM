@@ -44,4 +44,4 @@ El script utiliza coordenadas fijas para 1920x1080. Si cambias la resolución, a
 
 * LIMITE_DERECHO_X
 
-ALTURA_BARRA_Y
+* ALTURA_BARRA_Y
