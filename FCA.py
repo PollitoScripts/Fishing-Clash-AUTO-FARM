@@ -153,7 +153,7 @@ while True:
             minijuego_tension()
 
             intentos_limpieza = 0
-            while intentos_limpieza < 15:
+            while intentos_limpieza < 20:
                 if localizar('LANZAR.png'): break
                 p_rec = localizar('RECOGER.png') or localizar('RECOGER2.png')
                 p_omi = localizar('OMITIR_ANIMACION.png')
@@ -161,15 +161,19 @@ while True:
                 p_cru = localizar('CRUZ.png')
                 
                 if p_rec:
+                    print("¡RECOGER o RECOGER2 Encontrada! Intentando hacer click...")
                     pyautogui.click(p_rec.x, p_rec.y)
                     time.sleep(1.5)
                 elif p_omi:
+                    print("¡OMITIR_ANIMACION Encontrada! Intentando hacer click...")
                     pyautogui.click(p_omi.x, p_omi.y)
                     time.sleep(1.2)
                 elif p_tod:
+                    print("¡RECOGERLAS_TODAS Encontrada! Intentando hacer click...")
                     pyautogui.click(p_tod.x, p_tod.y)
                     time.sleep(1.5)
                 elif p_cru:
+                    print("¡Cruz Encontrada! Intentando hacer click...")
                     pyautogui.click(p_cru.x, p_cru.y)
                     time.sleep(1.5)
                
